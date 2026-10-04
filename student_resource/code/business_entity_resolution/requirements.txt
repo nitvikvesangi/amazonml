@@ -1,0 +1,19 @@
+# Amazon ML Challenge 2026 — business entity resolution
+# Reference environment: macOS (Apple M5 Pro, 10 cores, 16 GB RAM), Python 3.14.7 (arm64).
+# Pins below are the exact versions the submitted run used.
+
+# ---- core pipeline: blocking, features, LightGBM, submission output (README §3, steps 0-3) ----
+pandas==3.0.5
+numpy==2.5.2
+rapidfuzz==3.14.6
+lightgbm==4.7.0
+
+# ---- cross-encoder post-pass (README §3, steps 4-5; also used by §4 replay) --------------------
+# Runs on Apple-silicon MPS, CUDA or CPU. On Linux/Windows install the torch build that matches
+# your CUDA/CPU setup (it is the only package with a platform-specific index URL).
+torch==2.14.0
+transformers==5.17.0
+
+# ---- not needed for the shipped recipe -----------------------------------------------------------------
+unidecode==1.4.0              # only src/pipeline.py (legacy v1/v2 pipeline, kept for reference)
+sentence-transformers==6.1.0  # only src/sem_probe.py / src/sem_rescue_test.py (rejected experiment)

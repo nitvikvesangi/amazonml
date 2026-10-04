@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------------------
+# Amazon ML Challenge 2026 — repository ignores
+# The organiser dataset, caches, environments, working notes and every large
+# output stay local; git tracks source and docs only.
+# ---------------------------------------------------------------------------
+
+# Organiser data, caches, environments, logs
+student_resource/dataset/
+student_resource/cache/
+student_resource/logs/
+student_resource/utils/
+student_resource/code/business_entity_resolution/logs/
+student_resource/code/business_entity_resolution/.venv-sem/
+**/__pycache__/
+*.py[cod]
+
+# Campaign working notes and outputs (local only)
+student_resource/HANDOFF.md
+student_resource/PROGRESS.md
+student_resource/SUBMIT.md
+student_resource/output/
+
+# Packaging staging trees and archives
+*_stage/
+*_submission*.zip
+submission_*/
+*.zip
+
+# Organiser materials and screen recordings
+*.pdf
+*.mp4
+
+# Editor / OS noise
+.DS_Store
+.freebuff/
+.idea/
+.vscode/
